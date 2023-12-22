@@ -1,0 +1,93 @@
+.block {
+    padding-left: 20px;
+    color: white;
+    flex: none;
+
+    &:not(:first-child) {
+        margin-top: 16px;
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        transform: translateX(calc(calc(100% + 0px) * -1)) translateY(calc(15px - 50%));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.6);
+        cursor: pointer;
+        z-index: 9;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 30px;
+        height: 30px;
+        position: relative;
+        font-weight: bold;
+        display: flex;
+
+        .icon-wrapper {
+            width: 32px;
+            height: 32px;
+            flex: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 32px;
+
+            img {
+                width: 32px;
+                height: 32px;
+                object-fit: contain;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 32px;
+            // background-color: #00ffff;
+            left: -18px;
+        }
+
+        .title-text {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+            margin-left: 8px;
+            font-size: 20px;
+        }
+
+        .close {
+            color: rgba(255, 255, 255, 0.6);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+            cursor: pointer;
+
+            &:hover {
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+
+    .main {
+        margin-top: 12px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

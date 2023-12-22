@@ -1,0 +1,336 @@
+.left {
+    & > * {
+        &:not(:first-child) {
+            margin-top: 60px;
+        }
+    }
+    .wrapper {
+        position: relative;
+        .title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        .card-head,
+        .card-bottom {
+            height: 40px;
+        }
+        .first {
+            height: 40px;
+        }
+        .second {
+            height: 144px;
+        }
+        .third {
+            height: 40px;
+        }
+        .fourth {
+            height: 70px;
+        }
+        .fifth {
+            height: 70px;
+        }
+        .basic-situation {
+            display: flex;
+            position: absolute;
+            top: 30px;
+            left: 84px;
+            gap: 50px;
+            img {
+                width: 50px;
+                height: 50px;
+                position: relative;
+                cursor: pointer;
+            }
+            .name {
+                text-align: center;
+                font-size: 12px;
+                margin-top: 6px;
+            }
+            .num {
+                position: absolute;
+                top: 26px;
+                margin-left: 22px;
+                transform: translateX(-28%) translateY(-50%);
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+        .age-structure {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .sex-structure {
+            position: absolute;
+            top: 34px;
+            left: 40px;
+            .progress-item {
+                width: 330px;
+                display: flex;
+                justify-content: center;
+                .progress-title {
+                    width: 60px;
+                    font-size: 10px;
+                    color: #96c6e9;
+                }
+                .male-progress {
+                    :global {
+                        .ant-progress-bg {
+                            background: linear-gradient(to right, #2169a8, #7cf4f3) !important;
+                        }
+                    }
+                }
+                .female-progress {
+                    :global {
+                        .ant-progress-bg {
+                            background: linear-gradient(to right, #40379f, #c98df7) !important;
+                        }
+                    }
+                }
+            }
+        }
+        .party-age-structure {
+            position: absolute;
+            top: 14px;
+            display: flex;
+            gap: 40px;
+            .pie-chart {
+                margin-left: 80px;
+            }
+            .tips {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                margin-top: 10px;
+                .tip {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    .color {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                    }
+                    .cyan {
+                        background-color: #52ffff;
+                    }
+                    .yellow {
+                        background-color: #ffae00;
+                    }
+                    .blue {
+                        background-color: #28b1ff;
+                    }
+                    .pink {
+                        background-color: #f53f8c;
+                    }
+                    .green {
+                        background-color: #52ff97;
+                    }
+                    .detail {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .edu-structure {
+            position: absolute;
+            top: 2px;
+            left: 50px;
+            display: flex;
+            gap: 50px;
+            .pie-chart {
+                margin-left: 40px;
+            }
+            .tips {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                margin-top: 30px;
+                .box {
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                        .color {
+                            width: 24px;
+                            height: 12px;
+                        }
+                        .red {
+                            background-color: #f96d65;
+                        }
+                        .red-detail {
+                            color: #f96d65;
+                        }
+                        .yellow {
+                            background-color: #fa9b22;
+                        }
+                        .yellow-detail {
+                            color: #fa9b22;
+                        }
+                        .blue {
+                            background-color: #005cd9;
+                        }
+                        .blue-detail {
+                            color: #005cd9;
+                        }
+                        .green {
+                            background-color: #f53f8c;
+                        }
+                        .green-detail {
+                            color: #3cd5b3;
+                        }
+                        .purple {
+                            background-color: #a176ff;
+                        }
+                        .purple-detail {
+                            color: #a176ff;
+                        }
+                        .detail {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+:global {
+    .ant-progress-inner {
+        background-color: #2d5c8b !important;
+    }
+}
+
+.right {
+    & > * {
+        &:not(:first-child) {
+            margin-top: 60px;
+        }
+    }
+    .wrapper {
+        position: relative;
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .title {
+            position: absolute;
+            left: 50%;
+            font-size: 16px;
+            letter-spacing: 2px;
+            transform: translateX(-20%) translateY(-50%);
+        }
+        .title-second {
+            font-size: 12px;
+            transform: translateX(-30%) translateY(-50%);
+        }
+        img {
+            width: 90%;
+            height: 250px;
+            display: block;
+            margin-left: 40px;
+        }
+        .card-head {
+            height: 40px;
+        }
+        .card-bottom {
+            height: 40px;
+        }
+        .first {
+            height: 230px;
+        }
+        .second {
+            height: 180px;
+        }
+        .third {
+            height: 232px;
+        }
+        .style {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-49%);
+            img {
+                width: 300px;
+                height: 160px;
+                border-radius: 4px;
+            }
+            :global {
+                .ant-image-mask {
+                    width: 300px;
+                    left: 40px;
+                }
+            }
+            p {
+                font-size: 10px;
+                margin-left: 38px;
+                height: 90px;
+                overflow-y: scroll;
+                cursor: pointer;
+            }
+        }
+        .three-meeting {
+            position: absolute;
+            top: -10px;
+            left: 70px;
+        }
+        .activity-table {
+            position: absolute;
+            top: 28px;
+            left: 50%;
+            transform: translateX(-43%);
+            ::-webkit-scrollbar {
+                display: none;
+            }
+            .header {
+                display: grid;
+                width: 300px;
+                grid-template-columns: 1fr 1fr 1fr;
+                border: 1px solid #3592de;
+                padding: 4px 16px;
+                background-color: #134582;
+                .content {
+                    width: 70px;
+                    font-size: 12px;
+                    color: #76c1ff;
+                    text-align: center;
+                }
+            }
+            .table-data {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                height: 222px;
+                overflow: scroll;
+                cursor: pointer;
+                .column {
+                    display: grid;
+                    align-items: center;
+                    width: 300px;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    font-size: 12px;
+                    padding: 6px 16px;
+                    background-color: #5c9efa27;
+                    .branch,
+                    .num,
+                    .name {
+                        width: 70px;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+                .column:hover {
+                    background-color: #013c90b1;
+                    color: #05fbff;
+                }
+            }
+        }
+    }
+}
